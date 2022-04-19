@@ -10,13 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../imagenes/favicon1.png" type="image/pngx-icon">
-    <!-- GetButton.io widget -->
     <script type="text/javascript">
         (function () {
             var options = {
-                whatsapp: "1149361305", // WhatsApp number
-                call_to_action: "Escribinos", // Call to action
-                position: "right", // Position may be 'right' or 'left'
+                whatsapp: "1149361305", 
+                call_to_action: "Escribinos", 
+                position: "right", 
             };
             var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
             var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
@@ -24,7 +23,6 @@
             var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
         })();
         </script>
-        <!-- /GetButton.io widget -->
     <title>Graphics Ink</title>
 </head>
 <body>
@@ -38,7 +36,13 @@
         <nav class="barraNavegacion">
             <ul class="barraNavegacion__lista">
                  <li><a href="../index.html">Inicio</a></li>
-                 <li><b><a href="#">Productos</a></b></li>
+                 <li class="barraNavegacion__lista--subLista"><b><a href="#">Productos</a></b>
+                    <ul class="barraNavegacion__subLista">
+                        <li><a href="#vinilos">Vinilos</a></li>
+                        <li><a href="#llaveros">Llaveros</a></li>
+                        <li><a href="#remeras">Remeras</a></li>
+                    </ul>
+                 </li>
                  <li><a href="./servicios.html">Servicios</a></li>
                  <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
                  <li><a href="./contacto.html">Contacto</a></li>
@@ -47,47 +51,44 @@
     </header>
 
     <main>
-        <div class="fondo">
-        <div class="titulo">
-            <h1>Nuestros productos</h1>
+        <div class="fondoInicio">
+            <div class="titulo">
+                <h1>Productos</h1>
+            </div>
+            </div>
+        <div class="subTitulo" id="vinilos"><h2>Vinilos para vidrieras y calcos</h2></div>
+        <div class="fondo2">
+        <section class="gridTarjetas">
+           <div class="tarjeta tarjeta1"></div>
+           <div class="tarjeta tarjeta2"></div>
+           <div class="tarjeta tarjeta3"></div>
+           <div class="tarjeta tarjeta4"></div>
+           <div class="tarjeta tarjeta5"></div>
+        </section>
         </div>
+
+        <div class="subTitulo" id="llaveros"><h2>Llaveros publicitarios</h2></div>
+        <div class="fondo2">
+        <section class="gridTarjetas">
+           <div class="tarjeta tarjeta6"></div>
+           <div class="tarjeta tarjeta7"></div>
+           <div class="tarjeta tarjeta8"></div>
+           <div class="tarjeta tarjeta9"></div>
+           <div class="tarjeta tarjeta10"></div>
+        </section>
         </div>
-        <div class="subTitulo"><h2>Vinilos para vidrieras y calcos</h2></div>
-        <section class="gridTarjetas">
-           <div class="tarjeta tarjeta1"></div>
-           <div class="tarjeta tarjeta2"></div>
-           <div class="tarjeta tarjeta3"></div>
-           <div class="tarjeta tarjeta4"></div>
-           <div class="tarjeta tarjeta5"></div>
-        </section>
 
-        <div class="subTitulo"><h2>Llaveros publicitarios</h2></div>
+        <div class="subTitulo" id="remeras"><h2>Remeras estampadas</h2></div>
+        <div class="fondo2">
         <section class="gridTarjetas">
-           <div class="tarjeta tarjeta1"></div>
-           <div class="tarjeta tarjeta2"></div>
-           <div class="tarjeta tarjeta3"></div>
-           <div class="tarjeta tarjeta4"></div>
-           <div class="tarjeta tarjeta5"></div>
+           <div class="tarjeta tarjeta11"></div>
+           <div class="tarjeta tarjeta12"></div>
+           <div class="tarjeta tarjeta13"></div>
+           <div class="tarjeta tarjeta14"></div>
+           <div class="tarjeta tarjeta15"></div>
         </section>
+        </div>
 
-        <div class="subTitulo"><h2>Remeras estampadas</h2></div>
-        <section class="gridTarjetas">
-           <div class="tarjeta tarjeta1"></div>
-           <div class="tarjeta tarjeta2"></div>
-           <div class="tarjeta tarjeta3"></div>
-           <div class="tarjeta tarjeta4"></div>
-           <div class="tarjeta tarjeta5"></div>
-        </section>
-
-        
-        <div class="subTitulo"><h2>Tazas</h2></div>
-        <section class="gridTarjetas">
-           <div class="tarjeta tarjeta1"></div>
-           <div class="tarjeta tarjeta2"></div>
-           <div class="tarjeta tarjeta3"></div>
-           <div class="tarjeta tarjeta4"></div>
-           <div class="tarjeta tarjeta5"></div>
-        </section>
     </main>
 
     <footer>

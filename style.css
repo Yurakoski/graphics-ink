@@ -16,7 +16,7 @@
     grid-template-rows: repeat(3, auto);
 }
 
-header {
+header{
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -59,11 +59,31 @@ a{
     background-color:rgb(37, 15, 161);
 }
 
-h1{
-    animation: animacionTitulo 1s ease 0s 1 normal forwards;
+.barraNavegacion__lista--subLista{
+    position: relative;
 }
 
-@keyframes animacionTitulo {
+.barraNavegacion__subLista{
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: rgb(41, 41, 136);
+    top: 2.75rem;
+    left: 0;
+}
+.barraNavegacion__subLista li{
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+}
+.barraNavegacion__lista--subLista:hover .barraNavegacion__subLista{
+    display: block;
+}
+
+p{
+    animation: animacionParrafo 1s ease 0s 1 normal forwards;
+}
+
+@keyframes animacionParrafo {
 	0% {
 		transform: scaleY(0.4);
 		transform-origin: 100% 0%;
@@ -75,7 +95,7 @@ h1{
 	}
 }
 
-.titulo{
+.titulo, .tituloClaro{
     font-size: 1.4rem;
     text-align: center;
     align-items: center;
@@ -84,10 +104,25 @@ h1{
     color: white;
 }
 
+.tituloClaro{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+.subTitulo{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
 .parrafoInicial, .parrafoSecundario{
     font-size: 2rem;
     text-align: center;
-    padding: 6rem;
+    padding: 5rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
     color: black;
 }
 
@@ -95,12 +130,12 @@ h1{
     background-color:  rgba(2, 2, 2, 0.767);
     color: white;
     border-radius: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 .parrafoSecundario p{
     font-size: 1.4rem;
+    padding: 1rem;
 }
 
 h2, h3{
@@ -116,8 +151,23 @@ main ul li{
     text-align: center;
 }
 
-.fondo{
+.fondoInicio{
     background-image: url(./imagenes/printer.jpg);  
+    background-size: cover;
+}
+
+.fondoServicios{
+    background-image: url(./imagenes/printer2.jpg);  
+    background-size: cover;
+}
+
+.fondoSobreNosotros{
+    background-image: url(./imagenes/plotter5.jpg);  
+    background-size: cover;
+}
+
+.fondoContacto{
+    background-image: url(./imagenes/plotter.jpg);  
     background-size: cover;
 }
 
@@ -130,19 +180,17 @@ main ul li{
 .contenedorVideos{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.281);
+    background-color: rgba(255, 255, 255, 0.226);
 }
 
 .imagen, .mapa{
+    padding-top: 2rem;
     text-align: center;
-    padding: 1rem 1rem;
-    background-color:  rgba(2, 2, 2, 0.479);
 }
 
-.subTitulo{
-    align-items: center;
-    color: white;
-    background-color: black;
+.mapa{
+    padding: 1rem 1rem;
+    background-color:  rgba(2, 2, 2, 0.479);
 }
 
 .tarjetas h2{
@@ -164,38 +212,73 @@ main ul li{
     align-items: center;
     justify-content: center;
     border-radius: 1.5rem;
-    height: 18rem;
+    height: 22rem;
+    background-image: url(./imagenes/vinilo4.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .tarjeta1{
     grid-column: 1 / span 2;
-    background-image: url(./imagenes/llaveros1.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: url(./imagenes/vinilo4.png);
 }
 
 .tarjeta2{
     background-image: url(./imagenes/calco1.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .tarjeta3{
     background-image: url(./imagenes/vinilo1.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .tarjeta4{
     background-image: url(./imagenes/vinilo2.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .tarjeta5{
     background-image: url(./imagenes/vinilo3.png);
-    background-size: cover;
-    background-position: center;
+}
+
+.tarjeta6{
+    grid-column: 1 / span 2;
+    background-image: url(./imagenes/llaveros1.jpg);
+}
+
+.tarjeta7{
+    background-image: url(./imagenes/llaveros2.jpeg);
+}
+
+.tarjeta8{
+    background-image: url(./imagenes/llaveros3.jpg);
+}
+
+.tarjeta9{
+    background-image: url(./imagenes/llaveros4.jpg);
+}
+
+.tarjeta10{
+    background-image: url(./imagenes/llaveros5.JPG);
+}
+
+.tarjeta11{
+    grid-column: 1 / span 2;
+    background-image: url(./imagenes/remera5.jpeg);
+}
+
+.tarjeta12{
+    background-image: url(./imagenes/remera2.jpeg);
+}
+
+.tarjeta13{
+    background-image: url(./imagenes/remera3.jpeg);
+}
+
+.tarjeta14{
+    background-image: url(./imagenes/remera4.jpeg);
+}
+
+.tarjeta15{
+    background-image: url(./imagenes/remera1.jpeg);
 }
 
 .enviosLogo{
@@ -214,7 +297,7 @@ main ul li{
 
 .formulario__item, .formulario__item--mensaje{
     height: 1.8rem;
-    width: 30%;
+    width: 40%;
     margin: 0.4rem;
     border-color: rgba(0, 0, 0, 0.445);
     border-radius: 0.5rem;
@@ -263,37 +346,52 @@ main ul li{
 }
 
 @media only screen and (max-width: 480px){
+
     .barraNavegacion__lista{
         display: none;
     }
+
     .burger{
         display: inline-block;
     }
+
     header{
         flex-direction: row;
         justify-content:center;
         align-items:center;
     }
+
     .logo{
         transform: scale(0.8);
     }
+    
     .titulo{
         font-size: 0.7rem;
         background-color:  rgba(2, 2, 2, 0.363);
     }
+
+    .subTitulo{
+        font-size: 0.8rem;
+    }
+
     .parrafoInicial{
         font-size: 1.5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
         padding: 2rem 3rem 2rem 3rem;
     }
+
     h3{
         font-size: 1rem;
     }
+
     .gridTarjetas{
         display: block;
     }
-    .tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4, .tarjeta5{
+
+    .tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4, .tarjeta5, 
+    .tarjeta6, .tarjeta7, .tarjeta8, .tarjeta9, .tarjeta10
+    .tarjeta11, .tarjeta12, .tarjeta13, .tarjeta14, .tarjeta15{
         margin: 1rem;
     }
 
@@ -301,4 +399,31 @@ main ul li{
         display: none;
     }
 
+    .imagen{
+        padding: 0;
+        margin: 0;
+    }
+
+    .imagen img{
+        transform: scale(0.7);
+    }
+
+    .parrafoSecundario{
+        padding: 4rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+    }
+
+    .formulario {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .formulario__item, .formulario__item--mensaje{
+        width: 80%;
+    }
+
+    #gb-widget-8536{
+        display: none;
+    }
 }
