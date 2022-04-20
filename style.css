@@ -28,6 +28,19 @@ header{
     display: block;
     margin: auto;
     padding: 0.5rem;
+    animation: animacionLogo 1s ease 0s 1 normal forwards;
+}
+
+@keyframes animacionLogo {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 a{
@@ -80,18 +93,16 @@ a{
 }
 
 p{
-    animation: animacionParrafo 1s ease 0s 1 normal forwards;
+    animation: animacionParrafo 1.5s ease 0s 1 normal forwards;
 }
 
 @keyframes animacionParrafo {
 	0% {
-		transform: scaleY(0.4);
-		transform-origin: 100% 0%;
+		opacity: 0;
 	}
 
 	100% {
-		transform: scaleY(1);
-		transform-origin: 100% 0%;
+		opacity: 1;
 	}
 }
 
